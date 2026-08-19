@@ -1,0 +1,52 @@
+Ele cria uma lista de dicionários, converte para um DataFrame do Pandas,
+ordena as cidades da maior para a menor população e exibe o resultado.
+
+pd.DataFrame(cidades): Transforma a lista de dicionários em uma tabela estruturada.
+
+sort_values(by='populacao', ascending=False): Ordena as linhas pela coluna populacao em ordem decrescente (do maior para o menor).
+
+head(2): Seleciona e exibe apenas as 2 primeiras linhas do DataFrame ordenado (as duas cidades mais populosas).
+
+import pandas as pd  # Importa a biblioteca Pandas e atribui a ela o apelido 'pd'
+
+# Cria uma lista de dicionários, onde cada dicionário representa uma cidade com suas propriedades
+cidades = [
+    {
+        "nome": "Distrito Federal",
+        "uf": "DF",
+        "populacao": 3121212,
+    },  # Dicionário do DF
+    {
+        "nome": "São Paulo",
+        "uf": "SP",
+        "populacao": 198211212,
+    },  # Dicionário de SP
+    {
+        "nome": "Rio de Janeiro",
+        "uf": "RJ",
+        "populacao": 5121212,
+    },  # Dicionário do RJ
+    {
+        "nome": "Recife",
+        "uf": "PE",
+        "populacao": 1090212,
+    },  # Dicionário de PE
+]
+
+dataFrame = pd.DataFrame(
+    cidades
+)  # Converte a lista de dicionários em uma tabela estruturada (DataFrame)
+
+ordenada = dataFrame.sort_values(
+    by="populacao", ascending=False
+)  # Ordena o DataFrame pela coluna 'populacao' do maior para o menor (ordem decrescente)
+
+print(
+    ordenada
+)  # Exibe no terminal a tabela inteira, já organizada da maior para a menor população
+
+print()  # Imprime uma linha em branco para separar visualmente as saídas no terminal
+
+print(
+    ordenada.head(2)
+)  # Exibe apenas as 2 primeiras linhas da tabela organizada (as 2 cidades mais populosas)
