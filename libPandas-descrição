@@ -50,3 +50,7 @@ print()  # Imprime uma linha em branco para separar visualmente as saídas no te
 print(
     ordenada.head(2)
 )  # Exibe apenas as 2 primeiras linhas da tabela organizada (as 2 cidades mais populosas)
+
+#print(ordenada.head(2)['nome']) O Python pega o DataFrame ordenado, 
+# filtra as 2 primeiras linhas com .head(2) 
+# e imprime somente coluna 'nome' com as  duas primeiras linhas.
