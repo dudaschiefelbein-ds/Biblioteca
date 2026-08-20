@@ -30,3 +30,10 @@ plt.legend()
 
 # Renderiza e exibe o gráfico finalizado na tela
 plt.show()
+
+O código cria um gráfico de linhas interativo que compara a quantidade de chamados abertos mensalmente entre dois setores diferentes (TI e RH) ao longo do primeiro semestre.
+
+* **Estruturação dos dados:** Define a sequência de meses de Janeiro a Junho no eixo horizontal e associa a cada mês a quantidade exata de chamados de cada setor.
+* **Mapeamento e estilo:** Plota duas linhas distintas para diferenciação visual — uma linha azul com marcadores pequenos para representar a TI e uma linha vermelha com marcadores circulares maiores para representar o RH.
+* **Identificação visual:** Adiciona título principal, rótulos indicativos nos eixos 
+X (Meses) e Y (Quantidade) e inclui uma legenda para facilitar a leitura dos dados exibidos na tela.
