@@ -1,0 +1,31 @@
+# Importa o módulo de plotagem da biblioteca Matplotlib
+import matplotlib.pyplot as plt 
+
+# Define a lista com os nomes dos navegadores (rótulos do gráfico)
+navegadores = ["Chrome", "Firefox", "Edge"]
+
+# Define a lista com os valores numéricos correspondentes a cada navegador
+qtd = [1200, 600, 200]
+
+# Define a lista de cores que serão aplicadas às fatias
+cores = ["red", "orange", "blue"]
+
+# Gera o gráfico de pizza relacionando os valores, rótulos e cores
+plt.pie(qtd, labels=navegadores, colors=cores)
+
+# Renderiza e exibe a janela com o gráfico na tela
+plt.show()
+
+
+
+O código exibe um gráfico de pizza para comparar a proporção de uso entre três navegadores de internet.
+
+Importação da biblioteca: O módulo matplotlib.pyplot é carregado para disponibilizar as ferramentas de criação de gráficos no Python.
+
+Criação dos dados: São definidas duas listas — navegadores para guardar os nomes (rótulos) e qtd com os valores numéricos correspondentes a cada um.
+
+Personalização visual: A lista cores estabelece a cor de cada fatia (vermelho para Chrome, laranja para Firefox e azul para Edge).
+
+Montagem do gráfico: A função plt.pie() calcula automaticamente a proporção que cada valor representa no total de 360° do círculo.
+
+Exibição na tela: A função plt.show() renderiza a janela com a visualização do gráfico finalizado.
