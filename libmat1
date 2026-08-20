@@ -1,0 +1,32 @@
+# Importa o módulo pyplot da biblioteca Matplotlib para a criação de gráficos
+import matplotlib.pyplot as plt 
+
+# Lista com os nomes dos meses que serão exibidos no eixo horizontal (eixo X)
+meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun']
+
+# Lista com a quantidade de chamados do setor de TI em cada mês
+qtdTi = [60, 52, 76, 89, 108, 95]
+
+# Lista com a quantidade de chamados do setor de RH em cada mês
+qtdRh = [40, 72, 17, 28, 87, 56]
+
+# Plota a linha de TI (azul, linha contínua e marcador de ponto)
+plt.plot(meses, qtdTi, label="TI", color="blue", linestyle="-", marker=".")
+
+# Plota a linha de RH (vermelha, linha contínua e marcador de círculo)
+plt.plot(meses, qtdRh, label="RH", color="red", linestyle="-", marker="o")
+
+# Define o título principal no topo do gráfico
+plt.title('Chamados abertos')
+
+# Define a identificação do eixo horizontal (X)
+plt.xlabel('Meses')
+
+# Define a identificação do eixo vertical (Y)
+plt.ylabel('Quantidade')
+
+# Exibe a legenda identificando qual linha pertence a qual setor (TI ou RH)
+plt.legend()
+
+# Renderiza e exibe o gráfico finalizado na tela
+plt.show()
